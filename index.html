@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drill 2 B. Sy</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: rgb(223, 80, 111);
+        border: 5px dashed;
+        color: whitesmoke;
+      }
+      h1 {text-align: center;}
+      input, button {
+        margin-top: 10px;
+        padding: 8px;
+        display: block;
+      }
+      #output {
+        margin-top: 20px;
+        white-space: pre-wrap;
+        background: whitesmoke;
+        padding: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1> My Basic Info ('◡') </h1>
+<hr>
+    <label for="name"><b>Name:</b></label>
+    <input id="name" type="text" />
+
+    <label for="age"><b>Age:</b></label>
+    <input id="age" type="number" />
+
+    <label for="school"><b>School:</b></label>
+    <input id="school" type="text" />
+
+    <button id="submit-btn">Generate Message</button>
+<hr>
+    <div id="output"></div>
+
+    <py-config>
+      [[fetch]]
+      files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="main.py"></script>
+
+  </body>
